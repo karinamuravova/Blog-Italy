@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="doc.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script src="doc.js"></script>
+    <nav class="topnav">
+        <ul>
+            <li class="hideOnMobile"><a class="active" href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="Tours.html">Tours</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="sidemenueShow" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#233863">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>  
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#233863">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Tours.html">Tours</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>  
+
+     <div class="AboutA"> 
+     <h1 class="Abouth">About</h1>
+     <p class="parAb">Explore Italy with our expert tour guides. Their passion and knowledge <br> make every journey unforgettable. From Rome’s ruins to Florence’s art,<br> Venice’s canals to Cinque Terre’s trails, they bring Italy’s history and<br> culture to life. Enjoy personalized itineraries and local insights for an<br> extraordinary adventure. Let our team guide you through Italy’s wonders.
+     </p>
+     </div>
+    
+     <section>
+        <div class="containerA">
+            <div class="carouselA">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="carouseltou1">
+                                <img class="Friends1" src="Friends1.png" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                The finest dining.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img class="Friends1" src="https://i.pinimg.com/564x/9b/b7/05/9bb7057dee1b13cdfd7b1207a049bd7c.jpg" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                Code Pink.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img class="Friends1" src="https://i.pinimg.com/736x/22/f4/50/22f45096c6a597047ecb0d2fd5ab5246.jpg" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                Beach day.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img class="Friends1" src="https://i.pinimg.com/564x/93/35/94/9335942f0ef33237cdca95289ca256fb.jpg" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                Pizza workshop.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img class="Friends1" src="https://i.pinimg.com/564x/af/1c/d0/af1cd00273ea2e49a242f0a27327fb7c.jpg" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                Italian culture is...
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img class="Friends1" src="https://i.pinimg.com/564x/e9/c5/a3/e9c5a37817699f60dde3ace848b9e1eb.jpg" alt="">
+                            </div>
+                            <figcaption class="figcaption">
+                                Party like it's your last.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="Friends1.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="Pink.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="friends33.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://i.pinimg.com/564x/93/35/94/9335942f0ef33237cdca95289ca256fb.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="tshirt.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://i.pinimg.com/564x/e9/c5/a3/e9c5a37817699f60dde3ace848b9e1eb.jpg" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="Meet">Meet our team</h1>
+    <div class="aligmetCardsMeet">
+    <div class="card">
+        <div class="photo-placeholder"><img class="avatarphoto" src="Martin Popov (1).jpg" alt="martin pic"></div>
+        <div class="header">Martin Popov</div>
+        <div class="sub-header">Expert Tour Guide</div>
+        <div class="paragraph">
+            ∙Experience: 8 Years<br>
+
+            ∙Languages<br> English, Italian, Spanish, French<br><br>
+
+
+             
+                With 8 years of experience, Martin Rossi is your ideal guide. Fluent in English, Italian, Spanish, and French, he brings Italy’s history, culture, and hidden gems to life. From Rome's ruins to Venice's canals, Marco ensures every moment is memorable. Let his expertise and multilingual skills enhance your adventure!
+            
+
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="photo-placeholder"><img  class="avatar2"  src="Plamena (2).jpg" alt=""></div>
+        <div class="header">Plamena Kirilov</div>
+        <div class="sub-header">Cuisine Tour Guide</div>
+        <div class="paragraph">
+            ∙Experience: 5 Years<br>
+
+            ∙Languages<br> English, Italian, Spanish, French<br><br>
+            With 5 years of experience, Plamena Kirilov is your perfect guide for exploring Italian cuisine. Fluent in English, Italian, Spanish, and French, she brings Italy’s culinary delights to life. From Rome's trattorias to Venice's markets, Plamena ensures every moment is flavorful and memorable.
+        </div>
+    </div>
+    <div class="card">
+        <div class="photo-placeholder"><img class="avatar2" src="Anna.jpg" alt=""></div>
+        <div class="header">Anna Slavova</div>
+        <div class="sub-header"> Historical Tour Guide</div>
+        <div class="paragraph">
+            ∙Experience: 8 Years<br>
+
+            ∙Languages<br> English, Italian, Spanish, French<br><br>
+
+
+             
+            With 8 years of experience, Anna Slavova is your go-to guide for Italian history. Fluent in English, Italian, Spanish, and French, she brings Italy’s past to life. From ancient ruins to Renaissance art, Anna ensures every step is a journey through time.
+            
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+      <footer>
+
+   
+        <div class="column1">
+            <h2>Let't stay connected.
+                Subscribe for 35% dicount!</h2>
+            <input type="email" placeholder="email">
+            <div>
+                <label for="checkbox" class="checkbox">
+                    <input type="checkbox" id="checkbox"> I agree to the terms and conditions
+                </label>
+            </div>
+            <button class="Subscribe" id="Subscribe">Subscribe</button>
+            <div class="footerhref">
+            <a href="#">Press</a>
+            <a href="#">Career</a>
+            <a href="#">Privacy Policy</a>
+            </div>
+    
+        </div>
+        <div class="column2">
+            <h2>Contacts</h2>
+            <div class="column2list">
+            <ul>
+                <dt>Adress</dt>
+                <li>Bulgaria Burgas Zornica 54</li>
+                <li>email@gmail.com</li>
+                <li>+359 88797 9008</li>
+            </ul>
+            <ul>
+                <dt>Network</dt>
+                <li>Telegram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+            </ul>
+            </div>
+        </div>
+    
+    
+    
+    </footer>
+
+
+     
+
+
+
+</body>
+</html>
